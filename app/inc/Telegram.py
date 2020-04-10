@@ -4,7 +4,6 @@ from .Restful import Restful
 class Telegram(Restful):
 
     def __init__(self):
-        self.restful = Restful()
         token = '836730623:AAEoowkDezTME-NoZGanmrChHo7ZGMSM5ek'
         self.base_url = 'https://api.telegram.org/bot{}'.format(token)
 
@@ -19,7 +18,7 @@ class Telegram(Restful):
             }
         }
 
-        return self.restful.sendRequest(payload)
+        return self.sendRequest(payload)
 
     def setWebhook(self, url):
         payload = {
@@ -30,4 +29,4 @@ class Telegram(Restful):
             }
         }
 
-        return self.restful.sendRequest(payload)
+        return self.sendRequest(payload)

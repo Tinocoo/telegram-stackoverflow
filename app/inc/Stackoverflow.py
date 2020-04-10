@@ -4,7 +4,6 @@ from .Restful import Restful
 class Stackoverflow(Restful):
 
     def __init__(self):
-        self.restful = Restful()
         self.base_stack = 'https://api.stackexchange.com/2.2'
 
     def searchDiscussion(self, search):
@@ -19,4 +18,4 @@ class Stackoverflow(Restful):
             }
         }
 
-        return self.restful.sendRequest(payload)
+        return self.sendRequest(payload)
