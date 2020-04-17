@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/flask,python,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=flask,python,visualstudiocode
+# Created by https://www.gitignore.io/api/flask,python,virtualenv,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=flask,python,virtualenv,visualstudiocode
 
 ### Flask ###
 instance/*
@@ -159,8 +159,21 @@ dmypy.json
 
 # Pyre type checker
 
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+pyvenv.cfg
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-selfcheck.json
+
 ### VisualStudioCode ###
-.vscode/*
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -170,4 +183,4 @@ dmypy.json
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/flask,python,visualstudiocode
+# End of https://www.gitignore.io/api/flask,python,virtualenv,visualstudiocode
