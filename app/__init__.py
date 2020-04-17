@@ -3,8 +3,6 @@ from flask_cors import CORS
 import importlib
 import os
 
-from app.views.v1 import v1_telegram
-
 
 def create_app():
     app = Flask(__name__)
